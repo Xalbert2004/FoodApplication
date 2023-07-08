@@ -1,0 +1,22 @@
+export const DUMMY_PRODUCTS = [
+    { id:1, name:"Peperoni", category:"Pizza", price:3000, photo:"images/pizza.png" },
+    { id:2, name:"Mrgayin", category:"Pizza", price:4000, photo:"images/pizza.png" },
+    { id:3, name:"Snkov", category:"Pizza", price:2500, photo:"images/pizza.png" },
+    { id:4, name:"Suluguni", category:"Pizza", price:5300, photo:"images/pizza.png" },
+    { id:5, name:"Zeyton", category:"Pizza", price:2200, photo:"images/pizza.png" },
+    { id:6, name:"Coca-cola", category:"Drink", price:400, photo:"images/coca-cola.png" },
+    { id:7, name:"Fanta", category:"Drink", price:400, photo:"images/coca-cola.png" },
+    { id:8, name:"Sprite", category:"Drink", price:400, photo:"images/coca-cola.png" },
+    { id:9, name:"Palpy", category:"Drink", price:800, photo:"images/coca-cola.png" },
+    { id:10, name:"Sevan Anush", category:"Drink", price:150, photo:"images/coca-cola.png" },
+    { id:11, name:"Mirinda", category:"Drink", price:400, photo:"images/coca-cola.png" },
+    { id:12, name:"Xndzor", category:"Fruits", price:400, photo:"images/fruits.png" },
+    { id:13, name:"Narinj", category:"Fruits", price:450, photo:"images/fruits.png" },
+    { id:14, name:"Ciran", category:"Fruits", price:500, photo:"images/fruits.png" },
+    { id:15, name:"Tut", category:"Fruits", price:450, photo:"images/fruits.png" },
+    { id:16, name:"Arqayaxnzor", category:"Fruits", price:2000, photo:"images/fruits.png" },
+    { id:17, name:"Americano", category:"Coffee", price:1400, photo:"images/coffee.png" },
+    { id:18, name:"Capuchino", category:"Coffee", price:1200, photo:"images/coffee.png" },
+    { id:19, name:"Expresso", category:"Coffee", price:800, photo:"images/coffee.png" },
+
+]
