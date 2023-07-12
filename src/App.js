@@ -28,12 +28,41 @@ function App() {
 
   const products = useMemo(() => filterProducts(filterText), [filterText]);
 
+  const calculateTotal = (card) => {
+    return card.reduce((counter, item) =>  counter + item.price*item.counter, 0 )
+  }
+  const total = useMemo(() => calculateTotal(card), [card] )
+
+  const counterUp = (product) => {
+    product.counter++;
+    setCard([...card]);
+  }
+
+  const counterDown = (product) => {
+    product.counter--;
+    if(product.counter === 0){
+      card.splice(card.indexOf(product), 1 )
+    }
+    setCard([...card])
+  }
+
+  const removeFromCard = (product) => {
+    card.splice(card.indexOf(product), 1);
+    setCard([...card]);
+  }
+
   return (
     <div className="App">
       <Header onFilter={(text) => setFilterText(text)} />
       <main>
         <ProductList products={products} onMove={moveToCard}/>
-        <Card items={card} />
+        <Card 
+            items={card}
+            total={total}
+            onCounterUp={counterUp}
+            onCounterDown={counterDown}
+            onDelete={removeFromCard}
+           />
       </main>
     </div>
   );
